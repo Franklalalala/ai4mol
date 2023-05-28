@@ -8,7 +8,7 @@ For models, see `./model` folder.
 
 Here presents a short description.
 
-[toc]
+[TOC]
 
 ## Database
 
