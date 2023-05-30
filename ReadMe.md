@@ -10,6 +10,16 @@ Here presents a short description.
 
 [TOC]
 
+## Tips
+
+For users from Chinese Mainland, a [GitHub Proxy](https://ghproxy.com/) will speed up the clone from github:
+
+```
+git clone https://ghproxy.com/https://github.com/Franklalalala/ai4mol
+```
+
+
+
 ## Database
 
 ### 2020 ChemDataExtractor
