@@ -39,7 +39,8 @@ with connect('temp.db') as db, open(r'SMILES_properties.csv', 'r') as f_csv:
         try:
             a_mol = Chem.MolFromSmiles(a_smile)
             a_mol_with_H = Chem.AddHs(a_mol)
-            AllChem.EmbedMolecule(a_mol_with_H, useRandomCoords=True, maxAttempts=5000)
+            AllChem.EmbedMolecule(a_mol_with_H, useRandomCoords=True, maxAttempts=1000000)
+            AllChem.MMFFOptimizeMolecule(a_mol_with_H)
             a_conf = a_mol_with_H.GetConformer()
 
             an_atoms = get_atoms_from_conf(a_conf, mol=a_mol_with_H)
