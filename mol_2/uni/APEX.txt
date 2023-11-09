@@ -1,2 +1,0 @@
-APEX: Alloy Property EXplorer using simulations
-https://github.com/deepmodeling/APEX
